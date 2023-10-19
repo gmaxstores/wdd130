@@ -1,0 +1,10 @@
+body {background-color: #FCA6C9;}
+h1 {color: white;text-align: center;}
+h3 {width: 45%;text-align: left;margin: auto;}
+header p {color: white;text-align: center;width: 45%;margin: auto;}
+.actual {width: 100%; text-align: center; color: white;margin: 10px;}
+img {width: 20%;display: block; margin: 2% auto;}
+.bec {color: white;font-size: 2.0em; width: 30%;text-align: center;margin: 1% auto;}
+.ram {margin: auto;text-align: center;margin-top: 4%;}
+footer p {text-align: center;width: 33%;margin: auto;margin-bottom: 4%;}
+h1:hover {color: black;}
