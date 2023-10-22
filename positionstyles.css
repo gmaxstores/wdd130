@@ -119,7 +119,7 @@
   background-color: blue; 
 } 
 /* Activity 6 styles */ 
-.content6 {display: grid;grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;height: 100px;width: 100px;
+.content6 {display: grid;grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;height: 600px;width: 600px;
   /* This is the parent of the activity 6 boxes. */
 }
 .red6 {

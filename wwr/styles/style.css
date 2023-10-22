@@ -167,7 +167,7 @@ h2 {
 }
 footer {
   background-color: black;
-  color: #f9dec9;
+  color: #7be0ad;
   padding: 25px 50px;
   margin-top: 200px;
   display: flex;
@@ -215,9 +215,9 @@ footer .social img {
   #hero-msg h4 {
     display: none;
   }
+  #hero-msg h1 {color: #6f7364;}
   .home-title {
     font-size: 25px;
-    color: #6f7364;
   }
   .rivers-card,
   .camping-card,
