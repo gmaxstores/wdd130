@@ -192,6 +192,58 @@ footer p:hover {
 footer .social img {
   padding: 15px;
 }
+
+/*Rivers page css starts here*/
+.rivers-section {
+  display: grid;
+  grid-template-columns: 100px auto;
+}
+.river-icon {
+  grid-column: 1/2;
+  margin: 100px;
+}
+.salmon-box {
+  display: grid;
+  grid-template-columns: auto 400px;
+  margin: 100px 100px;
+}
+.rivers-img {
+  width: 400px;
+  float: right;
+  align-self: center;
+}
+.salmon-section {
+  justify-self: left;
+}
+.headline {
+  text-align: left;
+}
+.rivers-p {
+  text-align: left;
+}
+#rivers-headline {
+  text-align: center;
+}
+.rivers-search input[type="text"] {
+  float: right;
+  justify-self: center;
+  border-radius: 10px;
+  border-color: #7be0ad;
+}
+.rivers-search {
+  margin: 30px 30px;
+}
+.nav-indicator {
+  border: 20px;
+  background-color: black;
+  color: #7be0ad;
+  text-decoration: none;
+}
+.nav-indicator:hover {
+  background-color: white;
+  color: black;
+}
+
 @media screen and (max-width: 900px) {
   #hero,
   .home-grid {
@@ -215,7 +267,9 @@ footer .social img {
   #hero-msg h4 {
     display: none;
   }
-  #hero-msg h1 {color: #6f7364;}
+  #hero-msg h1 {
+    color: #6f7364;
+  }
   .home-title {
     font-size: 25px;
   }
