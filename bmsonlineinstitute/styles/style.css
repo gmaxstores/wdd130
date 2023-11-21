@@ -4,7 +4,7 @@
     margin: 0 auto;
 }
 header {background-color: #BB9F06;display: grid;grid-template-columns: 100px auto;}
-.logo {margin-top: 20px;margin-left: 20px;}
+.logo {margin-top: 30px;margin-left: 20px;display: block;width: 100%;}
 nav {display: flex;justify-content: space-around;font-size: 2em;font-weight: bold;}
 nav a {
     text-align: center;
@@ -23,33 +23,33 @@ body {
     color: #0E1428;
 }
 h1, h2, h3, h4, h5, h6 {font-family: "playfair display", serif, verdana, sans-serif;font-weight: bolder;font-size: 2em;}
-h1 {margin: 0;text-align: center;color: #0E1428;}
+h1 {margin: 0;text-align: left;color: #0E1428;padding: 30px;}
 .welcome-section {display: grid;grid-template-columns: 1fr 2fr 1fr;grid-template-rows: 40% 40% 15%;}
-.welcome-img {display: block; grid-column: 1/4;grid-row: 1/4;width: 100%;height: 100%;}
+.welcome-img {display: block; grid-column: 1/4;grid-row: 1/4;width: 100%;}
 .welcome-msg {grid-column: 2/3;grid-row: 1/2;}
-.welcome-msg p {font-family: "sometype mono", monospace, Helvetica, sans-serif;margin: 0;text-align: center;color: black;font-weight: bold;color: #0E1428;}
-.button-box-enrol {display: block; grid-column: 2/3;grid-row: 3/4;text-align: center;align-self: flex-end;background-color: #BB9F06;color: #0E1428;width: 30%;justify-self: center;text-decoration: none;font-size: 2.5em;border-radius: 20px;}
+.welcome-msg p {font-family: "sometype mono", monospace, Helvetica, sans-serif;margin: 0;text-align: left;color: black;font-weight: bold;color: #0E1428;font-size: 1.5em;}
+.button-box-enrol {display: block; grid-column: 2/3;grid-row: 3/4;text-align: center;align-self: flex-end;background-color: #BB9F06;color: #0E1428;width: 30%;justify-self: center;text-decoration: none;font-size: 2.5em;border-radius: 20px;padding: 20px;}
 .button-box-enrol:hover {background-color: #0E1428;color: white;}
 .side {display: grid;grid-template-columns: 1fr 1fr;padding: 30px;}
-.side-section {display: grid;grid-template-columns: 1fr 1fr;grid-template-rows: auto auto 1fr;column-gap: 10px;row-gap: 10px;}
-.side-section-p {grid-column: 1/3;grid-row: 1/2;font-size: 1.65em;text-align: justify;font-family: "sometype mono", monospace, Helvetica, sans-serif;display: block;margin: 0;}
-.button-box-enrol1 {grid-column: 1/2;grid-row: 2/3;text-align: center;background-color: #BB9F06;color: #0E1428;text-decoration: none;width: auto;justify-self: center;font-size: 1.5em;padding: 10px;border-radius: 20px;}
+.side-section {display: grid;grid-template-columns: 1fr 1fr;grid-template-rows: auto auto 1fr;column-gap: 10px;row-gap: 10px;padding: 50px;}
+.side-section-p {grid-column: 1/3;grid-row: 1/2;font-size: 1.65em;text-align: left;font-family: "sometype mono", monospace, Helvetica, sans-serif;display: block;margin: 0;padding: 50px;}
+.button-box-enrol1 {grid-column: 1/2;grid-row: 2/3;text-align: center;background-color: #BB9F06;color: #0E1428;text-decoration: none;width: auto;justify-self: center;font-size: 1.5em;padding: 20px;border-radius: 20px;}
 .button-box-enrol1:hover {background-color: #0E1428;color: white;}
-.button-box-enrol2 {grid-column: 2/3;grid-row: 2/3;text-align: center;background-color: #BB9F06;color: #0E1428;text-decoration: none;width: auto;justify-self: center;font-size: 1.5em;padding: 10px;border-radius: 20px;}
+.button-box-enrol2 {grid-column: 2/3;grid-row: 2/3;text-align: center;background-color: #BB9F06;color: #0E1428;text-decoration: none;width: auto;justify-self: center;font-size: 1.5em;padding: 20px;border-radius: 20px;}
 .button-box-enrol2:hover {background-color: #0E1428;color: white;}
-.side-msg-two {grid-column: 1/3;grid-row: 3/4;text-align: center;margin-top: 0;}
-.side-img {display: block;align-self: center;justify-self: center; grid-column: 2/3;grid-row: 1/4;}
+.side-msg-two {grid-column: 1/3;grid-row: 3/4;text-align: left;margin-top: 0;padding: 30px;display: block;margin-left: 50px;margin-right: 50px;}
+.side-img {display: block;align-self: center;justify-self: center; grid-column: 2/3;grid-row: 1/4;width: 100%;}
 .comments-headline {text-align: center;font-weight: bold;font-size: 1.8em;}
-.comments {display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;grid-template-rows: 10px 10px;}
+.comments {display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;padding: 50px;column-gap: 50px;}
 .one {grid-column: 1/2;grid-row: 1/2;font-size: 1em;padding-bottom: 10px;font-weight: bold;}
-.one-c {grid-row: 2/3;padding: 10px;grid-column: 1/2;margin-left: 0;}
+.one-c {grid-row: 2/3;grid-column: 1/2;margin-left: 0;}
 .two {grid-column: 2/3;padding-bottom: 10px;grid-row: 1/2;font-weight: bolder;}
-.two-c {display: block; grid-row: 2/3;grid-column: 2/3;padding: 10px;margin-left: 0;}
+.two-c {display: block; grid-row: 2/3;grid-column: 2/3;margin-left: 0;}
 .three {grid-column: 3/4;padding-bottom: 10px;grid-row: 1/2;font-weight: bolder;}
-.three-c {grid-column: 3/4;grid-row: 2/3;padding: 10px;}
+.three-c {grid-column: 3/4;grid-row: 2/3;}
 .four {grid-column: 4/5;padding-bottom: 10px;grid-row: 1/2;font-weight: bolder;}
 .one-c, .two-c, .three-c, .four-c {font-family: "sometype mono", monospace, Helvetica, sans-serif;}
-.four-c {grid-column: 4/5;grid-row: 2/3;padding: 10px;}
+.four-c {grid-column: 4/5;grid-row: 2/3;}
 footer {
     background-color: #BB9F06;
     color: #0E1428;
