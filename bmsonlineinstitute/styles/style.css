@@ -306,7 +306,7 @@ footer .name {
 .about-img .fourth img {width: 100%;}
 .about-sec-p {
   font-size: 2.5em;
-  padding: 50px;
+  padding-left: 50px;padding-right: 50px;
   font-family: "sometype mono", monospace, Helvetica, sans-serif;
 }
 .about-img .first h3 {
