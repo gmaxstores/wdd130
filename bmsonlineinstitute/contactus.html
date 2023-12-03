@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <div class="content">
@@ -19,13 +20,11 @@
         </header>
         <main>
             <div class="contact-welcome">
-                <div class="contact-img">
-                    <img src="images/contactus.png" alt="search picture">
-                </div>
+                <img class="contact-img" src="images/contactuss.png" alt="search picture">
                 <h1 class="contact-msg">CONTACT US TODAY</h1>
             </div>
             <div class="contact-msg-two">
-                <p class="about-p">
+                <p class="about-para">
                     You can reach us via any of the following means:
                 </p>
             </div>
@@ -35,31 +34,31 @@
                     <h3>Phone Number: 07064852404, 08110895912, 09162296367</h3>
                 </section>
                 <form action="/my-handling-form-page" method="post">
-                    <div>
+                    <div class="container">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="user_name">
                     </div>
-                    <div>
+                    <div class="container">
                         <label for="mail">Email:</label>
                         <input type="email" id="mail" name="user_email">
                     </div>
-                    <div>
+                    <div class="container">
                         <label for="gender">Gender:</label>
                         <input type="text" id="gender" name="user_gender">
                     </div>
-                    <div>
+                    <div class="container">
                         <label for="nationality">Nationality:</label>
                         <input type="text" id="nationality" name="user_nationality">
                     </div>
-                    <div>
+                    <div class="container">
                         <label for="address">Address:</label>
                         <input type="text" id="address" name="user_address">
                     </div>
-                    <div>
+                    <div class="container">
                         <label for="number">Phone number:</label>
                         <input type="text" id="number" name="user_phonenumber">
                     </div>
-                    <div>
+                    <div class="container">
                         <label for="msg">Message:</label>
                         <textarea id="msg" name="user_message"></textarea>
                     </div>
@@ -69,28 +68,28 @@
                 </form>
             </div>
             <div class="contact-photos">
-                <section>
-                    <img src="images/vp.png" alt="picture of Founder">
+                <section class="cone">
+                    <img src="images/founder.png" alt="picture of Founder">
                     <h4>Founder of BMS Online Institute</h4>
                     <p>Phone number: 07064852404</p>
                     <p>Email: maxwellnvani&commat;gmail&period;com</p>
                 </section>
-                <section>
+                <section class="ctwo">
                     <h4>Principal of BMS Online Institute</h4>
                     <p>Phone number: 09162296367</p>
                     <p>Email: gloriacokpah&commat;gmail&period;com</p>
                 </section>
-                <section>
+                <section class="cthree">
                     <h4>Vice Principal - Admin of BMS Online Institute</h4>
                     <p>Phone number: 08110895912</p>
                     <p>Email: paxnvani&commat;gmail&period;com</p>
                 </section>
-                <section>
+                <section class="cfour">
                     <h4>Vice Principal - Academics of BMS Online Institute</h4>
                     <p>Phone number: 07030602080</p>
                     <p>Email: linos34&commat;yahoo&period;com</p>
                 </section>
-                <section>
+                <section class="cfive">
                     <h4>ICT Head of BMS Online Institute</h4>
                     <p>Phone number: 08079679133</p>
                     <p>Email: bmsonlineinstitute&commat;gmail&period;com</p>
@@ -127,5 +126,22 @@
             </div>
         </footer>
     </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
 </body>
 </html>
