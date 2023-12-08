@@ -338,6 +338,87 @@ button {
   margin-top: 3em;
 }
 
+
+/* extra credit */
+/******************************************************************************
+START grid layout extra credit
+******************************************************************************/
+
+* {
+  box-sizing: border-box;
+}
+.grid1 {display: grid;grid-template-columns: 1fr repeat(12);padding-top: 2em;padding-bottom: 2em;
+  
+}
+
+.grid1 h1 {
+  
+}
+
+.grid2 {display: grid;grid-template-columns: 1fr repeat(12);
+  
+}
+.grid2 h2 {
+  
+}
+.grid3 {display: grid;grid-template-columns: 1fr repeat(12);
+  
+}
+
+.grid3 h3 {
+  
+}
+
+.grid4 {display: grid;grid-template-columns: 1fr repeat(12);
+  
+}
+
+.grid4 h2 {
+  
+}
+.grid5 {display: grid;grid-template-columns: 1fr repeat(12);}
+
+section {
+  
+}
+
+section h2 {
+  
+}
+
+form {
+  
+}
+
+
+legend {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+fieldset > div {
+  
+}
+
+label {
+  
+}
+
+input {
+  
+}
+
+button {
+  
+}
+
+section > div {
+  
+}
+
+
+
+
 @media screen and (max-width: 900px) {
   #hero,
   .home-grid {
